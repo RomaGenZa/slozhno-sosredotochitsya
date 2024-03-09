@@ -2,3 +2,18 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+:root {
+  --image-heading: url(../images/cover-image-dark.png);
+  --main-color: rgb(0, 0, 40);
+  --main-font: "IBM Plex mono";
+  --heading-color: rgb(219, 0, 255);
+  --text-color: rgb(241, 178, 206);
+  --red-color: rgb(255, 0, 112);
+  --paragraph-color: rgb(255, 0, 112);
+  --heading-shadow: 4px 4px 0 var(--red-color);
+  --word-shadow: 2px 2px 0 var(--red-color);
+  --border-type: 1px solid var(--red-color);
+  --title-text: rgb(0, 0, 40);
+  --decorated-color: rgb(255, 0, 112);
+  --rec-color: rgb(255, 0, 112);
+}
