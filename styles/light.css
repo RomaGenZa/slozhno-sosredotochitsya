@@ -19,7 +19,8 @@
   --word-shadow: 2px 2px 0 var(--red-color);
   --title-text: rgb(53, 52, 48);
   --decorated-color: rgb(53, 52, 48);
-  --border-type: 1px solid var(--decorated-color);
+  --border-type: 1px solid var(--text-color);
+  --border-hover: 1px solid rgba(50, 49, 45, 0.4);
   
   .REC {
     opacity: 0;
