@@ -21,6 +21,10 @@
   --border-type: 1px solid var(--text-color);
   --title-text: rgb(0, 0, 40);
   --decorated-color: rgb(255, 0, 112);
+
+  .header__theme-menu-button_type_dark {
+    outline: 1px solid var(--decorated-color);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
