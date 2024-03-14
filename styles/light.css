@@ -3,9 +3,8 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
+    /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
@@ -21,12 +20,43 @@
   --decorated-color: rgb(53, 52, 48);
   --border-type: 1px solid var(--text-color);
   --border-hover: 1px solid rgba(50, 49, 45, 0.4);
+  --opacity-decorated: 0;
+}
 
-  .rec {
-    opacity: 0;
-  }
+:root.page.theme_light {
+  --image-heading: url(../images/cover-image-light.png);
+  --main-color: rgba(255, 241, 247, 1);
+  --heading-color: rgb(255, 194, 230);
+  --text-color: rgb(53, 52, 48);
+  --paragraph-color: rgb(53, 52, 48);
+  --heading-shadow: 4px 4px 0 var(--red-color);
+  --red-color: rgb(255, 141, 203);
+  --word-shadow: 2px 2px 0 var(--red-color);
+  --title-text: rgb(53, 52, 48);
+  --decorated-color: rgb(53, 52, 48);
+  --border-type: 1px solid var(--text-color);
+  --border-hover: 1px solid rgba(50, 49, 45, 0.4);
+  --opacity-decorated: 0;
+}
 
-  .header__theme-menu-button_type_light {
-    outline: 1px solid var(--decorated-color);
+@media (prefers-color-scheme: light) {
+  :root {
+    --image-heading: url(../images/cover-image-light.png);
+    --main-color: rgba(255, 241, 247, 1);
+    --heading-color: rgb(255, 194, 230);
+    --text-color: rgb(53, 52, 48);
+    --paragraph-color: rgb(53, 52, 48);
+    --heading-shadow: 4px 4px 0 var(--red-color);
+    --red-color: rgb(255, 141, 203);
+    --word-shadow: 2px 2px 0 var(--red-color);
+    --title-text: rgb(53, 52, 48);
+    --decorated-color: rgb(53, 52, 48);
+    --border-type: 1px solid var(--text-color);
+    --border-hover: 1px solid rgba(50, 49, 45, 0.4);
+    --opacity-decorated: 0;
   }
+}
+
+.rec {
+  opacity: var(--opacity-decorated);
 }
