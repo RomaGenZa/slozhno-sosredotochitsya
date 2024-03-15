@@ -264,7 +264,7 @@
 
   .header {
     min-height: 984px;
-    row-gap: 162px;
+    row-gap: 16vb;
   }
 
   .header__theme-menu {
@@ -404,7 +404,7 @@
 @media (width >= 1024px) {
   .header {
     min-height: 757px;
-    row-gap: 115px;
+    row-gap: 15vb;
     grid-template-rows: 1fr min-content 1fr;
   }
 
